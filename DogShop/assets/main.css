@@ -1,0 +1,58 @@
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+}
+
+:root {
+    --cW: white;
+    --cB: black;
+    --text-color: #ffffff;
+    --hover: #30B5B2;
+    --text-footer: #7A7E79;
+}
+
+.txt {
+    text-align: center;
+}
+
+.m1 {
+    margin: 10px;
+}
+
+.m2 {
+    margin: 20px;
+}
+
+.m3 {
+    margin: 30px;
+}
+
+.mt10 {
+    margin-top: 100px;
+}
+
+.ml_10 {
+    margin: 0px 100px;
+}
+
+.mt1 {
+    margin-top: 10px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.tf {
+    text-transform: uppercase;
+}
+
+.fs12 {
+    font-size: 12px;
+}

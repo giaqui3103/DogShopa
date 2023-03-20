@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Hong Ha</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bb555fa7e1.js" crossorigin="anonymous"></script>
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery -->
+    <script>
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                $(".header").css({
+                    "background-color": " rgba(0,0,0,0)",
+                    "trgansition": "0.5"
+                });
+                if (scroll >= 300) {
+                    $("#header_scroll").css({
+                        "background-color": "#333333",
+                        "transition": "0.5"
+                    });
+
+                }
+            });
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <section class="HomePage_header">
+        <!-- banner -->
+        <div id="carouselExampleIndicators " class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/slider1.jpg" class="d-block w-100" alt="Banerdog">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/slider2.jpg" class="d-block w-100" alt="Baner dog">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/slider3.jpg" class="d-block w-100" alt="Baner dog">
+                </div>
+            </div>
+            <!-- header -->
+            <div id="header_scroll" style="background-color: #333333;" class=" header HomePage_header-menu ">
+                <img width="200" height="70" src="Images/logo-dogcat-blue.png" class="header_logo" alt=" dogcatshop ">
+                <div class=" header_ul">
+                    <ul class="header_li">
+                        <a href="HomePage.html">
+                            <li class="hover">Giới thiệu</li>
+                        </a>
+                        <a href="cat.html">
+                            <li class="hover">Mèo cảnh</li>
+                        </a>
+                        <a href="dog.html">
+                            <li class="hover">Chó cảnh</li>
+                        </a>
+                        <a href="food.html">
+                            <li class="hover">Đồ ăn</li>
+                        </a>
+                        <a href="index.html">
+                            <li class="hover">Tin tức</li>
+                        </a>
+                        <a href="contact.html">
+                            <li class="hover">Liên Hệ</li>
+                        </a>
+
+                    </ul>
+
+                </div>
+                <div class="header_icon">
+                    <i id="dog_search" class="fa-solid fa-magnifying-glass"></i>
+                    <i id="dog_search" class="fa-solid fa-user"></i>
+                    <i id="dog_search" class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+            </div>
+            <div class="Home_Page-text m-lg-5  ">
+                <h3 class="tf mb-2 mt-3">Chester</h3>
+                <h2 class="tf text-uppercase mt-3"> Is a champion dog</h2>
+                <p class="f16 mt-3">Be sure to feed him like one</p>
+                <p class="f16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam aperiam tempora doloribus ipsa eius!</p>
+                <button style="padding:20px" class="tf text-white mt-3">Shop now</button>
+            </div>
+    </section>
+    <section class="HomePage_content">
+        <div class="HomePage_content-promotion">
+            <div class="HomePage_promotion1 ">
+                <p class="mx-3"><i class="fa-sharp fa-solid fa-rocket"></i></p>
+                <p class="text-uppercase">FREE SHIPPING
+                    </br>All Order Over $150</p>
+            </div>
+            <div class="HomePage_promotion1 ">
+                <p class="mx-3 "><i class="fa-solid fa-piggy-bank"></i> </p>
+                <p>15% DISCOUNT
+                    </br>For Firts Order </p>
+            </div>
+            <div class="HomePage_promotion1 ">
+                <p class="mx-1 "><i class="fa-solid fa-bag-shopping"></i></p>
+                <p>SECURE PAYMENT
+                    </br>Confirmed
+                    <div class="HomePage_promotion1 ">
+                        <p class="mx-3    "><i class="fa-solid fa-box-open"></i></p>
+                        <p>AWESOME
+                            </br>Every Month</p>
+                    </div>
+            </div>
+        </div>
+        <div class="HomePage_content-Product ">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="HomePage_content-logo my-5 ">
+                <h2> CHÓ CẢNH</h2>
+                <img src="Images/icon.jpg" width="100px" height="60px">
+            </div>
+            <div class="dog_subcategory3 ml_10 ">
+
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog2.jpg" width="300px" height="300px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó American Eskimo</p>
+                    <b>14,200,000 ₫</b>
+                </div>
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon ">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog3.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">11,090,000 </b>
+                </div>
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog4.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Đàn chó Golden 4 tháng</p>
+                    <b class="mt1">11,190,000 </b>
+                </div>
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog5.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó boston Terrier thuần chủng</p>
+                    <b class="mt1">12,00,000 </b>
+                </div>
+
+            </div>
+            <div class="dog_subcategory3 ml_10   mt-3">
+
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog6.jpg" width="300px" height="300px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó Alaska</p>
+                    <b>14,289,000 ₫</b>
+                </div>
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon ">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog7.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Becgie</p>
+                    <b class="mt1">3,089,000  </b>
+                </div>
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog8.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó American Bully</p>
+                    <b class="mt1">9,025,800  </b>
+                </div>
+                <div data-aos="zoom-in-left" class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog4.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">11,090,000 </b>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section data-aos="fade-down" class=" HomePage_content-banner ">
+        <button class="HomePage_content-more text-uppercase my-4 ">Xem thêm</button>
+        <img src="Images/banner2.jpg " width="100% " height="100% " alt="banner ">
+    </section>
+    <div class="HomePage_content-Product">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="HomePage_content-logo my-5 ">
+            <h2> MÈO CẢNH</h2>
+            <img src="Images/icon.jpg" width="100px" height="60px">
+        </div>
+        <div class="dog_subcategory3 ml_10">
+
+            <div class="dog_subcategory4" data-aos="zoom-in-right">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat1.jpg" width="300px" height="300px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1">Mèo Anh British Shorthair</p>
+                <b>8,564,000</b>
+            </div>
+            <div data-aos="zoom-in-right" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon ">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat2.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">MÈO CẢNH </p>
+                <p class="dog_subcategory-p1  ">Mèo nhân sư không lông – Sphynx</p>
+                <b class="mt1">8,564,000 </b>
+            </div>
+            <div data-aos="zoom-in-right" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat3.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1  ">Mèo Thổ Nhĩ Kỳ Turkish Angora</p>
+                <b class="mt1">7,528,000  </b>
+            </div>
+            <div data-aos="zoom-in-right" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat4.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1  ">Mèo Nga mắt xanh – Russian Blue</p>
+                <b class="mt1">11,090,000 </b>
+            </div>
+
+        </div>
+        <div data-aos="zoom-in-right" class="dog_subcategory3 ml_10 ">
+
+            <div class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat5.jpg" width="300px" height="300px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1">Mèo Van Thổ – Turkish Van</p>
+                <b>6,582,000</b>
+            </div>
+            <div data-aos="zoom-in-right" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon ">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat6.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1  ">Mèo Ba Tư lông ngắn – Exotic</p>
+                <b class="mt1">5,589,000 </b>
+            </div>
+            <div data-aos="zoom-in-right" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat7.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                <b class="mt1">11,090,000 </b>
+            </div>
+            <div data-aos="zoom-in-right" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/cat8.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Mèo cảnh</p>
+                <p class="dog_subcategory-p1  ">Mèo</p>
+                <b class="mt1">11,090,000 </b>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="HomePage_banner">
+        <div class="HomePage_banner1">
+            <img src="Images/banner-about1.jpg " alt="baner_fill" width="650px" height="350px"> </div>
+        <div class="HomePage_banner1">
+            <img src="Images/banner-about2.jpg " alt="baner_fill" width="650px" height="350px">
+        </div>
+    </div>
+    <div class="HomePage_content-Product">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="HomePage_content-logo my-5 ">
+            <h2> ĐỒ ĂN</h2>
+            <img src="Images/icon.jpg" width="100px" height="60px">
+        </div>
+        <div class="dog_subcategory3 ml_10 ">
+
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan1.jpg" width="300px" height="300px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1"> Thức ăn đóng hộp Whiskas Cá Biển</p>
+                <b>289,000 ₫</b>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon ">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan2.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1  ">
+                    Pate Monge gà 100g</p>
+                <b class="mt1">190,000 </b>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan3.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1  ">
+                    SY – Bánh thưởng</p>
+                <b class="mt1">11,090,000 </b>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan4.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1  ">
+                    Whiskas tuna 1,2kg</p>
+                <b class="mt1">1,090,000 </b>
+            </div>
+
+        </div>
+        <div class="dog_subcategory3 ml_10 mt-3">
+
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan5.jpg" width="300px" height="300px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1">
+                    Royal Canin – Medium junior 4k</p>
+                <b>45,000</b>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon ">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan6.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1  ">
+                    Pate Monge cá hồi và lê 100g</p>
+                <b class="mt1">79,000 </b>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="3000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan7.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1  ">
+                    Thức ăn cho mèo Cat’s Eye túi 7kg</p>
+                <b class="mt1">60,000 </b>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="dog_subcategory4">
+                <div class="dog_subcategory4-icon">
+                    <div class="dog_subcategory-img3">
+                        <img src="Images/doan8.jpg" width="270px" height="270px">
+                    </div>
+                    <div id="dog_buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="dog_hover">Thêm vào giỏ </div>
+                    </div>
+                </div>
+                <p class="mt-3 text-uppercase fs12">Thức Ăn Cho Mèo</p>
+                <p class="dog_subcategory-p1  ">
+                    SY – Bánh thưởng Steamed bread</p>
+                <b class="mt1">290,000 </b>
+            </div>
+
+        </div>
+        <button class="HomePage_content-more text-uppercase my-4 ">Xem thêm</button>
+
+
+    </div>
+
+    <section>
+        <div class="HomePage_content-logo my-5 ">
+            <h2> Thông tin hữu ích</h2>
+            <img src="Images/icon.jpg " width="100px " height="60px ">
+        </div>
+        <div class="HomePage_content-Product  HomePage_content-Apost ">
+            <div class="HomePage_content-post ">
+                <div class="HomePage_content-subpost">
+                    <img src="Images/post1.jpg" width="380px " height="230px">
+                </div>
+                <div style="text-align: start;" class="HomePage_content-subpost2 ">
+                    <h6 class="text-uppercase">
+                        Duis luctus elit nisi...
+                    </h6>
+                    <p>Chế độ ăn cho chó con, chó từ 2 tháng đến 6 tháng tuổi</p>
+                    <h6 class="text-uppercase">Xem thêm </h6>
+                </div>
+
+            </div>
+            <div class="HomePage_content-post ">
+                <div class="HomePage_content-subpost">
+                    <img src="Images/post1.jpg" width="380px " height="230px">
+                </div>
+                <div style="text-align: start;" class="HomePage_content-subpost2 ">
+                    <h6 class="text-uppercase">
+                        Duis luctus elit nisi...
+                    </h6>
+                    <p>Chế độ ăn cho chó con, chó từ 2 tháng đến 6 tháng tuổi</p>
+                    <h6 class="text-uppercase">Xem thêm </h6>
+                </div>
+
+            </div>
+            <div class="HomePage_content-post ">
+                <div class="HomePage_content-subpost">
+                    <img src="Images/post1.jpg" width="380px " height="230px">
+                </div>
+                <div style="text-align: start;" class="HomePage_content-subpost2 ">
+                    <h6 class="text-uppercase">
+                        Duis luctus elit nisi...
+                    </h6>
+                    <p>Chế độ ăn cho chó con, chó từ 2 tháng đến 6 tháng tuổi</p>
+                    <h6 class="text-uppercase">Xem thêm </h6>
+                </div>
+
+            </div>
+
+
+        </div>
+        <button class="HomePage_content-more text-uppercase my-4 ">Xem thêm</button>
+        </div>
+    </section>
+
+    <div class="footer ">
+        <div class="footer_bg">
+
+        </div>
+        <div class="footer_left mt10">
+            <ul>
+                <h3 class="m1">Điều hướng</h3>
+                <li>Trang chủ</li>
+                <li style="color:#30B5B2" ;>Về chúng tôi</li>
+                <li>Sản phẩm</li>
+                <li>Điểm tin hữu ích</li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+        <div class="footer_center  mt10">
+            <img class="m1" src="Images/logo-dogcat-blue.png" width="120px" ;height="120px">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+            <input type="text" placeholder="Email">
+            <button class="m2">Gửi</button>
+        </div>
+        <div class="footer_right mt10 ">
+            <h3 class="m1">Thông tin liên hệ</h3>
+            <ul>
+                <li>319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
+                <li>0126 922 0162</li>
+                <li>demonhunter@gmail.com mon@mona.media
+                </li>
+                <li>demonhunterp</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

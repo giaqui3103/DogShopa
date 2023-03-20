@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Hong Ha</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- jquery -->
+    <script src="assets/jquery-3.6.3.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bb555fa7e1.js" crossorigin="anonymous"></script>
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#dog_search").mousemove(function() {
+                $(".header_icon-search").show();
+            });
+            $("#dog_search").mouseleave(function() {
+                $(".header_icon-search").hide();
+            });
+
+
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <section class="HomePage_header">
+
+        <!-- header -->
+        <div style="background-color: #333333;" class=" header HomePage_header-menu ">
+            <img width="200" height="70" src="Images/logo-dogcat-blue.png" class="header_logo" alt=" dogcatshop ">
+            <div class=" header_ul">
+                <ul class="header_li">
+                    <a href="HomePage.html">
+                        <li class="hover">Giới thiệu</li>
+                    </a>
+                    <a href="cat.html">
+                        <li class="hover">Mèo cảnh</li>
+                    </a>
+                    <a href="dog.html">
+                        <li class="hover">Chó cảnh</li>
+                    </a>
+                    <a href="food.html">
+                        <li class="hover">Đồ ăn</li>
+                    </a>
+                    <a href="newspaper.html">
+                        <li class="hover">Tin tức</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="hover">Liên Hệ</li>
+                    </a>
+
+                </ul>
+
+            </div>
+            <div class="header_icon">
+                <i id="dog_search" class="fa-solid fa-magnifying-glass"></i>
+                <i id="dog_search" class="fa-solid fa-user"></i>
+                <i id="dog_search" class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <!-- <div class="header_icon-search">
+
+                <input type="text" placeholder="Tìm kiếm" value=" ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div> -->
+
+        </div>
+
+
+    </section>
+    <section class="dog_content">
+        <div class="dog_subcontent m-3 ">
+            <p style="flex-grow: 0;font-weight: bold;text-transform: uppercase;">Trang Chủ /<span style="opacity: 0.6; "> Chó cảnh</span></p>
+
+            <p style="flex-grow: 1;float: right; text-align: end; margin-right: 10px;">Xem tất cả 9 kết quả</p>
+            <select style=" flex-grow: 0.2;float: right; border-radius:3px; box-shadow: 2px 4px var(--hover);" id="country" name="country">
+                <option value="australia">Thứ tự mặc định</option>
+                <option value="canada">Thứ tự theo mức độ phổ biến</option>
+                <option value="usa">Thứ tự theo điểm đánh giá</option>
+                <option value="usa">Thứ tự theo điểm sản phẩm mới</option>
+                <option value="usa">Thứ tự theo giá: thấp đến cao</option>
+                <option value="usa">Thứ tự theo giá cao đến thấp</option>
+
+              </select>
+        </div>
+    </section>
+    <section class="dog_category">
+        <div class="dog_subcategory1 ">
+            <p>Danh mục sản phẩm</p>
+            <table style="width: 100%;border-radius: 5px;">
+                <tr class="a" style="border:1px solid rgb(223, 221, 218)">
+                    <td> Chó cảnh</td>
+                </tr>
+
+                <tr class="a" style="border:1px solid rgb(223, 221, 218)">
+
+                    <td> Mèo cảnh</td>
+                </tr>
+
+
+            </table>
+            <div class=" my-4 " style="text-align: start;">
+                <p class="text-uppercase " style="font-weight: bold;"> sản phẩm</p>
+                <div class="dog_subcategory-sp">
+                    <div class="dog_subcategory-img">
+                        <div class="dog_subcategory-img1">
+                            <img src="Images/cat1.jpg" width="60px" height="60px">
+
+                        </div>
+                        <div class="dog_subcategory-p">
+                            <p> Mèo van thổ</p>
+                            <p> 14.897.000</p>
+                        </div>
+                    </div>
+
+                    <div class="dog_subcategory-img">
+                        <div class="dog_subcategory-img1">
+                            <img src="Images/cat2.jpg" width="60px" height="60px">
+
+                        </div>
+                        <div class="dog_subcategory-p">
+                            <p> Mèo anh lông ngắn</p>
+                            <p> 4.800.000</p>
+                        </div>
+                    </div>
+                    <div class="dog_subcategory-img">
+                        <div class="dog_subcategory-img1">
+                            <img src="Images/doan5.jpg" width="60px" height="60px">
+
+                        </div>
+                        <div class="dog_subcategory-p">
+                            <p> Thức ăn mèo</p>
+                            <p> 97.000</p>
+                        </div>
+                    </div>
+
+                    <div class="dog_subcategory-img">
+                        <div class="dog_subcategory-img1">
+                            <img src="Images/doan5.jpg" width="60px" height="60px">
+
+                        </div>
+                        <div class="dog_subcategory-p">
+                            <p> Thức ăn chó</p>
+                            <p> 45.000</p>
+                        </div>
+                    </div>
+                    <div class="dog_subcategory-img">
+                        <div class="dog_subcategory-img1">
+                            <img src="Images/doan7.jpg" width="60px" height="60px">
+
+                        </div>
+                        <div class="dog_subcategory-p">
+                            <p> Thức ăn chó</p>
+                            <p> 197.000</p>
+                        </div>
+                    </div>
+                    <div class="dog_subcategory-img">
+                        <div class="dog_subcategory-img1">
+                            <img src="Images/doan2.jpg" width="60px" height="60px">
+
+                        </div>
+                        <div class="dog_subcategory-p">
+                            <p> Thức ăn chó</p>
+                            <p> 97.000</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dog_subcategory-img">
+                    <div class="dog_subcategory-img1">
+                        <img src="Images/cat2.jpg" width="60px" height="60px">
+
+                    </div>
+                    <div class="dog_subcategory-p">
+                        <p> Mèo anh lông ngắn</p>
+                        <p> 4.800.000</p>
+                    </div>
+                </div>
+                <div class="dog_subcategory-img">
+                    <div class="dog_subcategory-img1">
+                        <img src="Images/doan3.jpg" width="60px" height="60px">
+
+                    </div>
+                    <div class="dog_subcategory-p">
+                        <p> Thức ăn chó</p>
+                        <p> 97.000</p>
+                    </div>
+                </div>
+                <div class="dog_subcategory-img">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="dog_subcategory2">
+            <div class="dog_subcategory3">
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog1.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercasec fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1"> Chó American Bully</p>
+                    <b>3.445.000</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog2.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó American Eskimo</p>
+                    <b>14,289,000 ₫</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog3.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">11,090,000 </b>
+                </div>
+
+            </div>
+
+            <div class="dog_subcategory3">
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog4.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1"> Chó Dachshund </p>
+                    <b>5.895.000</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog5.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó Chihuahua</p>
+                    <b>1,289,000 ₫</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog6.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">13,190,000 </b>
+                </div>
+
+            </div>
+
+            <div class="dog_subcategory3">
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog7.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1"> Chó Husky</p>
+                    <b>13.445.000</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog8.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó American Eskimo</p>
+                    <b>14,289,000 ₫</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog3.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">11,090,000 </b>
+                </div>
+
+            </div>
+            <div class="dog_subcategory3">
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog4.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1"> Chó Husky</p>
+                    <b>13.445.000</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog1.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó American Eskimo</p>
+                    <b>14,289,000 ₫</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog7.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">11,090,000 </b>
+                </div>
+
+            </div>
+            <div class="dog_subcategory3">
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog4.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1"> Chó Husky</p>
+                    <b>3.445.000</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog1.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1">Chó American Eskimo</p>
+                    <b>12,689,000 ₫</b>
+                </div>
+                <div class="dog_subcategory4">
+                    <div class="dog_subcategory4-icon">
+                        <div class="dog_subcategory-img3">
+                            <img src="Images/dog7.jpg" width="270px" height="270px">
+                        </div>
+                        <div id="dog_buy">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="dog_hover">Thêm vào giỏ </div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-uppercase fs12">Chó cảnh</p>
+                    <p class="dog_subcategory-p1  ">Chó Alaska</p>
+                    <b class="mt1">4,090,000 </b>
+                </div>
+
+
+            </div>
+            <div class="dog_nextpage">
+                <div class="dog_nextpage1">
+                    <p><i class="fa-solid fa-chevron-left"></i></p>
+                </div>
+                <div class="dog_nextpage1">
+                    <p>1</p>
+                </div>
+                <div class="dog_nextpage1">
+                    <p>2</p>
+                </div>
+                <div class="dog_nextpage1">
+                    <p>3</p>
+                </div>
+                <div class="dog_nextpage1">
+                    <p>4</p>
+                </div>
+                <div class="dog_nextpage1">
+                    <p>...</p>
+                </div>
+                <div class="dog_nextpage1">
+                    <p><i class="fa-solid fa-chevron-right"></i></p>
+                </div>
+            </div>
+
+
+
+
+    </section>
+    <div class="footer dog_footer">
+        <div class="footer_bg">
+
+        </div>
+        <div class="footer_left mt10">
+            <ul>
+                <h3 class="m1">Điều hướng</h3>
+                <li>Trang chủ</li>
+                <li>Về chúng tôi</li>
+                <li style="color:#30B5B2" ;>Sản phẩm</li>
+                <li>Điểm tin hữu ích</li>
+                <li>Liên hệ</li>
+            </ul>
+        </div>
+        <div class="footer_center  mt10">
+            <img class="m1" src="Images/logo-dogcat-blue.png" width="120px" ;height="120px">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+            <input type="text" placeholder="Email">
+            <button style="border-radius: 2px;" class="m2">Gửi</button>
+        </div>
+        <div class="footer_right mt10 ">
+            <h3 class="m1">Thông tin liên hệ</h3>
+            <ul>
+                <li>319 c16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
+                <li>0126 922 0162</li>
+                <li>demonhunter@gmail.com mon@mona.media
+                </li>
+                <li>demonhunterp</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
